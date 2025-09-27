@@ -134,7 +134,7 @@ nav {
 
 @media (max-width:768px){
   .carousel figure{
-    width:220px;
+    width:auto;
     height:300px;
     left:calc(50% - 110px);
     top:calc(50% - 150px);
@@ -350,6 +350,7 @@ nav {
         justify-content: center;
     }
 }
+
 
 
 
