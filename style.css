@@ -298,6 +298,7 @@ nav {
 @media (max-width: 768px) {
   .hamburger {
     display: block;
+    margin-left: 80px;
   }
 
   .nav-links {
@@ -349,3 +350,4 @@ nav {
     justify-content: center;
   }
 }
+
