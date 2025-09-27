@@ -151,18 +151,22 @@ const theta = 360 / n;
 let currAngle = 0;
 
 // position figures in 3D circle
-figures.forEach((fig, i)=>{
+const isMobile = window.innerWidth <= 768;
+const zDistance = isMobile ? 300 : 500;
+
+figures.forEach((fig, i) => {
   const angle = theta * i;
-  fig.style.transform = `rotateY(${angle}deg) translateZ(320px)`;
+  fig.style.transform = `rotateY(${angle}deg) translateZ(${zDistance}px)`;
 });
 
-// auto-rotate
-setInterval(()=> {
-  currAngle += theta * -1; // rotate left automatically
-  carousel.style.transform = `translateZ(-500px) rotateY(${currAngle}deg)`;
+setInterval(() => {
+  currAngle += theta * -1;
+  carousel.style.transform = `translateZ(-${zDistance}px) rotateY(${currAngle}deg)`;
 }, 1500);
+
 </script>
 </body>
 
 </html>
+
 
