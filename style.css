@@ -55,7 +55,7 @@ nav {
   flex: 1;
   max-width: 300px;
   margin: 10px;
-  padding-right: 40px;
+  padding-right: 10px;
 }
 
 
@@ -349,4 +349,5 @@ nav {
         justify-content: center;
     }
 }
+
 
